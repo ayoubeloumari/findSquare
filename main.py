@@ -24,13 +24,11 @@ def map_gen(x, y, density):
 
 
 def printMaxSquare(M):
-    R = len(M)  # no. of rows in M[][]
-    C = len(M[0])  # no. of columns in M[][]
+    R = len(M)
+    C = len(M[0])
 
     S = [[0 for k in range(C)] for l in range(R)]
-    # here we have set the first row and column of S[][]
 
-    # Construct other entries
     for i in range(1, R):
         for j in range(1, C):
             if (M[i][j] == '.'):
@@ -39,8 +37,7 @@ def printMaxSquare(M):
             else:
                 S[i][j] = 0
 
-    # Find the maximum entry and
-    # indices of maximum entry in S[][]
+
     max_of_s = S[0][0]
     max_i = 0
     max_j = 0
