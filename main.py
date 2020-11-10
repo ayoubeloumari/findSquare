@@ -14,12 +14,12 @@ def map_gen(x, y, density):
     for i in range(int(y)):
         for j in range(int(x)):
             if (random.randint(0, int(y)) * 2) < int(density):
-                #print('o', end='')
+                print('o', end='')
                 m[i][j]= 'o'
             else:
                 m[i][j] = '.'
-                #print('.', end='')
-        #print('', end='\n')
+                print('.', end='')
+        print('', end='\n')
     return m
 
 
@@ -51,12 +51,10 @@ def printMaxSubSquare(M):
                 max_i = i
                 max_j = j
 
-    print("Maximum size sub-matrix is: ")
+    print("Le plus grand carré :")
     for i in range(max_i, max_i - max_of_s, -1):
         for j in range(max_j, max_j - max_of_s, -1):
-            print(M[i][j], end=" ")
             M[i][j]='x'
-        #print("")
     return M
 
 if __name__ == '__main__':
