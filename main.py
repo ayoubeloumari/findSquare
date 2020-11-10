@@ -23,7 +23,7 @@ def map_gen(x, y, density):
     return m
 
 
-def printMaxSubSquare(M):
+def printMaxSquare(M):
     R = len(M)  # no. of rows in M[][]
     C = len(M[0])  # no. of columns in M[][]
 
