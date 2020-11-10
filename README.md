@@ -1,4 +1,4 @@
-# findSquare
+# Find the square
 
 To run the project use the command `py main.py arguments`
 
