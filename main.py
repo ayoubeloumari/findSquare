@@ -63,7 +63,7 @@ if __name__ == '__main__':
         exit()
     else:
         m=map_gen(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
-        M=printMaxSubSquare(m)
+        M=printMaxSquare(m)
     for i in range(int(sys.argv[2])):
         for j in range(int(sys.argv[1])):
             print(M[i][j],end='')
